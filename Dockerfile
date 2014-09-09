@@ -24,4 +24,6 @@ RUN sed 's/#$InputTCPServerRun 514/$InputTCPServerRun 514/' -i /etc/rsyslog.conf
 
 EXPOSE 514/tcp 514/udp
 
+VOLUME /var/log/containers
+
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
