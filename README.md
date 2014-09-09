@@ -7,4 +7,4 @@ Builds a docker image for rsyslog v8-stable.
 
 Run the container:
 
-```docker run -d -p 514:514 jplock/rsyslog```
+```docker run -d -p 514:514 combro2k/rsyslog```
