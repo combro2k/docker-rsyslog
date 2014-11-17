@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y -q install software-properties-common python-software-properties supervisor
 RUN add-apt-repository ppa:adiscon/v8-stable
-RUN apt-get update && apt-get -y -q install rsyslog
+RUN apt-get update && apt-get -y -q install rsyslog rsyslog-elasticsearch
 
 ADD config/etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 ADD config/etc/supervisor/conf.d /etc/supervisor/conf.d
