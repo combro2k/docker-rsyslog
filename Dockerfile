@@ -1,8 +1,4 @@
-# DOCKER-VERSION 1.1.2
-# VERSION        0.1
-
-FROM ubuntu:14.04
-MAINTAINER Justin Plock <justin@plock.net>
+FROM ubuntu-debootstrap:14.04
 MAINTAINER Martijn van Maurik <docker@vmaurik.nl>
 
 ENV DEBIAN_FRONTEND noninteractive
